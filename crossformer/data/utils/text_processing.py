@@ -52,7 +52,7 @@ class HFTokenizer(TextProcessor):
 class MuseEmbedding(TextProcessor):
     def __init__(self):
         import tensorflow_hub as hub  # lazy import
-        import tensorflow_text  # noqa: F401
+        #import tensorflow_text  # noqa: F401
 
         self.muse_model = hub.load(MULTI_MODULE)
 
@@ -90,7 +90,7 @@ class CLIPTextProcessor(TextProcessor):
 class UniversalSentenceEncoder(TextProcessor):
     def __init__(self):
         import tensorflow_hub as hub  # lazy import
-        import tensorflow_text  # noqa: F401
+        #import tensorflow_text  # noqa: F401
 
         self.sentence_encoder = hub.load(
             "https://tfhub.dev/google/universal-sentence-encoder-large/5"
